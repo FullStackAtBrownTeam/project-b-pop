@@ -21,3 +21,36 @@ code {
   margin-right: 15px;
   background-color: rgb(189, 250, 250);
 }
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+}
+
+.sideMenu {
+  background-color: red;
+  width: 100%;
+  margin-right: 100px;
+}
+.contentColumn {
+  float: right;
+  width: 80vw;
+}
+
+.menuColumn {
+  padding-top: 20px;
+  padding-left: 20px;
+  height: 100vh;
+  background: lightpink;
+  float: right;
+  width: 20vw;
+}
+
+.menuRow {
+  width: 100px;
+  height: 50px;
+}
+
+.menuRow:hover {
+  background-color: linen;
+}
