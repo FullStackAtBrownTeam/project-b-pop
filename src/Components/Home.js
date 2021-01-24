@@ -7,6 +7,7 @@ import {
   useRouteMatch,
 } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "bootstrap/dist/css/bootstrap.css";
+
 import BLogo from "./b.png";
 //import { PrivateRoute } from "../App";
 
@@ -17,7 +18,7 @@ import Profile from "./Profile";
 const Home = (props) => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
         <a href="/">
           <img className="logoIcon" src={BLogo} alt="Logo" href="/" />
         </a>
@@ -61,6 +62,22 @@ const Home = (props) => {
           </div>
         </div>
       </nav>
+
+      <div>
+        <div className="contentColumn"></div>
+        <div className="menuColumn">
+          <table>
+            <thead>
+              <h3>Easy Access</h3>
+            </thead>
+            <tr className="menuRow">Providence Pets</tr>
+            <tr className="menuRow">Brown Sports</tr>
+            <tr className="menuRow">Event Photos</tr>
+            <tr className="menuRow">Urban Structures</tr>
+          </table>
+        </div>
+      </div>
+
       <BrowserRouter>
         <Switch>
           <Route exact path="/MyGroups" component={MyGroups} />
