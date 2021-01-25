@@ -75,7 +75,7 @@ const Home = (props) => {
         <div className="menuColumn">
           <table>
             <thead>
-              <h3 className="sideMenu">Easy Access</h3>
+              <h3 className="menuHead">Easy Access</h3>
             </thead>
             <tr>
               <td className="menuRow">Providence Pets</td>

@@ -48,11 +48,16 @@ code {
 
 .menuRow {
   padding-left: 10px;
+  width: 20vw;
   height: 7vh;
 }
 
 .menuRow:hover {
   background-color: linen;
+}
+
+.menuHead {
+  padding-left: 10px;
 }
 
 .featuredRow {
