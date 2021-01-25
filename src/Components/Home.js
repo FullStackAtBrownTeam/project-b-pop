@@ -64,9 +64,14 @@ const Home = (props) => {
       </nav>
 
       <div>
-        <div className="contentColumn"></div>
+        <div className="contentColumn">
+          <div className="featuredRow">
+            <h1>Featured Gallery</h1>
+          </div>
+          <div>Your Posts</div>
+        </div>
         <div className="menuColumn">
-          <table>
+          <table className="sideMenu">
             <thead>
               <h3>Easy Access</h3>
             </thead>
