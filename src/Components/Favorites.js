@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 const Favorites = (props) => {
   return (
-    <div>
+    <div className="featuredRow">
       <h1>Favorites</h1>
     </div>
   );

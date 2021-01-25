@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 const MyGroups = (props) => {
   return (
-    <div>
+    <div className="featuredRow">
       <h1>My Groups</h1>
     </div>
   );
