@@ -68,17 +68,27 @@ const Home = (props) => {
           <div className="featuredRow">
             <h1>Featured Gallery</h1>
           </div>
-          <div>Your Posts</div>
+          <div className="postsColumn">
+            <h3>Your Feed</h3>
+          </div>
         </div>
         <div className="menuColumn">
-          <table className="sideMenu">
+          <table>
             <thead>
-              <h3>Easy Access</h3>
+              <h3 className="sideMenu">Easy Access</h3>
             </thead>
-            <tr className="menuRow">Providence Pets</tr>
-            <tr className="menuRow">Brown Sports</tr>
-            <tr className="menuRow">Event Photos</tr>
-            <tr className="menuRow">Urban Structures</tr>
+            <tr>
+              <td className="menuRow">Providence Pets</td>
+            </tr>
+            <tr>
+              <td className="menuRow">Brown Sports</td>
+            </tr>
+            <tr>
+              <td className="menuRow">Event Photos</td>
+            </tr>
+            <tr>
+              <td className="menuRow">Urban Structures</td>
+            </tr>
           </table>
         </div>
       </div>

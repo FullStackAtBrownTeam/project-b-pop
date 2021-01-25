@@ -56,6 +56,21 @@ code {
 }
 
 .featuredRow {
-  height: 35vh;
+  margin: 40px;
+  margin-top: 100px;
+  padding: 20px;
+  height: 45vh;
   background-color: paleturquoise;
+}
+
+.postsColumn {
+  margin: 40px;
+  padding: 20px;
+  height: 45vh;
+  background-color: rgb(219, 219, 219);
+}
+
+body nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-nav {
+  position: fixed;
+  width: 100vw;
 }
