@@ -66,6 +66,7 @@ code {
   padding: 20px;
   height: 45vh;
   background-color: paleturquoise;
+  border-radius: 20px;
 }
 
 .postsColumn {
@@ -73,6 +74,7 @@ code {
   padding: 20px;
   height: 45vh;
   background-color: rgb(219, 219, 219);
+  border-radius: 20px;
 }
 
 body nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-nav {
