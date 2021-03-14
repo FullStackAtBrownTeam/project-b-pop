@@ -1,23 +1,8 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-  useHistory,
-  useRouteMatch,
-} from "react-router-dom";
-import { Navbar, Nav, NavDropdown } from "bootstrap/dist/css/bootstrap.css";
-
 import BLogo from "./b.png";
 
-import MyGroups from "./MyGroups";
-import Favorites from "./Favorites";
-import Profile from "./Profile";
-import MainFeed from "./MainFeed";
-
-const Home = (props) => {
+const NavBar = (props) => {
   return (
-    <BrowserRouter>
       <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
           <a href="/">
@@ -42,7 +27,7 @@ const Home = (props) => {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/MyGroups">
+                <a class="nav-link" href="/groups">
                   My Groups
                 </a>
               </li>
@@ -64,14 +49,8 @@ const Home = (props) => {
           </div>
         </nav>
 
-        <Switch>
-          <Route exact path="/" component={MainFeed} />
-          <Route path="/MyGroups" exact component={MyGroups} />
-          <Route path="/Favorites" component={Favorites} />
-          <Route path="/Profile" component={Profile} />
-        </Switch>
+
       </div>
-    </BrowserRouter>
   );
 };
-export default Home;
+export default NavBar;
