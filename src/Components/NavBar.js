@@ -1,10 +1,30 @@
-import React from "react";
-import BLogo from "./b.png";
+import React, { useState } from "react";
+import BLogo from "./bpop_full.png";
+import './hamburger.css';
 
 const NavBar = (props) => {
+  const [toggleHamburger, setToggleHamburger] = useState(true);
   return (
-      <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
+    <div>
+      <div class="topnav">
+        <div class="navLeft">
+          <a href="/">
+            <img className="logoIcon" src={BLogo} alt="Logo" href="/" />
+          </a>
+          <input className="searchBar" type="text" placeholder="Search.." />
+        </div>
+        <div className="navRight">
+          <button className="navButtons">Log in/Join</button>
+          <button className="navButtons">Post</button>
+          <button onClick={() => setToggleHamburger(!toggleHamburger)}
+            class={toggleHamburger ? "hamburger hamburger--squeeze" : "hamburger hamburger--squeeze is-active"} type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+      {/* <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-nav">
           <a href="/">
             <img className="logoIcon" src={BLogo} alt="Logo" href="/" />
           </a>
@@ -47,10 +67,10 @@ const NavBar = (props) => {
               <button className="rightDivButtons">Sign Up</button>
             </div>
           </div>
-        </nav>
+        </nav> */}
 
 
-      </div>
+    </div>
   );
 };
 export default NavBar;

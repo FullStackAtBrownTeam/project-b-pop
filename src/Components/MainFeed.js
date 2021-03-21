@@ -14,7 +14,7 @@ import BLogo from "./b.png";
 const MainFeed = (props) => {
   return (
     <div>
-      <div>
+      {/* <div>
         <div className="contentColumn">
           <div className="featuredRow">
             <h1>Featured Gallery</h1>
@@ -42,7 +42,7 @@ const MainFeed = (props) => {
             </tr>
           </table>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
