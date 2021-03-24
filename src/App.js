@@ -13,22 +13,24 @@ import MyGroups from "./Components/MyGroups";
 import Favorites from "./Components/Favorites";
 import Profile from "./Components/Profile";
 import MainFeed from "./Components/MainFeed";
+import ImageCard from "./Components/Common/ImageCard";
 
 
 function App() {
 	return (
-		<div>
-			<NavBar />
-			<BrowserRouter>
-				<Switch>
-					<Route exact path="/" component={MainFeed} />
-					<Route path="/groups" exact component={MyGroups} />
-					<Route path="/favorites" component={Favorites} />
-					<Route path="/profile" component={Profile} />
-				</Switch>
-			</BrowserRouter>
-		</div>
-	);
+    <div>
+      <NavBar />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={MainFeed} />
+          <Route path="/groups" exact component={MyGroups} />
+          <Route path="/favorites" component={Favorites} />
+          <Route path="/profile" component={Profile} />
+        </Switch>
+      </BrowserRouter>
+      <ImageCard username="xchai"></ImageCard>
+    </div>
+  );
 }
 
 export default App;
