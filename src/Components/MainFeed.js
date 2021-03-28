@@ -7,6 +7,7 @@ import {
   useRouteMatch,
 } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "bootstrap/dist/css/bootstrap.css";
+import Masonry from 'react-masonry-css'
 
 import BLogo from "./b.png";
 //import { PrivateRoute } from "../App";
@@ -14,6 +15,35 @@ import BLogo from "./b.png";
 const MainFeed = (props) => {
   return (
     <div>
+      <Masonry
+        breakpointCols={3}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column">
+        <div className = "masonryDiv">
+          <h1>Hello!</h1>
+        </div>
+        <div className = "masonryDiv">
+          <h1>Hello!</h1>
+        </div>
+        <div className = "masonryDiv">
+          <h1>Hello!</h1>
+        </div>
+        <div className = "masonryDiv">
+          <h1>Hello!</h1>
+        </div>
+        <div className = "masonryDiv">
+          <h1>Hello!</h1>
+        </div>
+        <div className = "masonryDiv">
+          <h1>Hello!</h1>
+        </div>
+        <div className = "masonryDiv">
+          <h1>Hello!</h1>
+        </div>
+        <div className = "masonryDiv">
+          <h1>Hello!</h1>
+        </div>
+      </Masonry>
       {/* <div>
         <div className="contentColumn">
           <div className="featuredRow">
