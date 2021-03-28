@@ -10,6 +10,7 @@ import { Navbar, Nav, NavDropdown } from "bootstrap/dist/css/bootstrap.css";
 import Masonry from 'react-masonry-css'
 
 import BLogo from "./b.png";
+import ImageCard from "./Common/ImageCard"
 //import { PrivateRoute } from "../App";
 
 const MainFeed = (props) => {
@@ -19,28 +20,32 @@ const MainFeed = (props) => {
         breakpointCols={3}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column">
-        <div className = "masonryDiv">
+        <div className="masonryDiv">
+          <ImageCard
+            username="xchai"
+            numLikes={3}
+            caption="beach day, shot on Sony Alpha a7"
+          ></ImageCard>
+        </div>
+        <div className="masonryDiv">
           <h1>Hello!</h1>
         </div>
-        <div className = "masonryDiv">
+        <div className="masonryDiv">
           <h1>Hello!</h1>
         </div>
-        <div className = "masonryDiv">
+        <div className="masonryDiv">
           <h1>Hello!</h1>
         </div>
-        <div className = "masonryDiv">
+        <div className="masonryDiv">
           <h1>Hello!</h1>
         </div>
-        <div className = "masonryDiv">
+        <div className="masonryDiv">
           <h1>Hello!</h1>
         </div>
-        <div className = "masonryDiv">
+        <div className="masonryDiv">
           <h1>Hello!</h1>
         </div>
-        <div className = "masonryDiv">
-          <h1>Hello!</h1>
-        </div>
-        <div className = "masonryDiv">
+        <div className="masonryDiv">
           <h1>Hello!</h1>
         </div>
       </Masonry>
