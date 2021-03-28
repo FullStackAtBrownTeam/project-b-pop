@@ -7,9 +7,9 @@ function Heart(props) {
   return (
     <div>
       {props.isActive ? (
-        <img src={SolidHeart} onClick={props.onClick}></img>
+        <img class="heart" src={SolidHeart} onClick={props.onClick}></img>
       ) : (
-        <img src={EmptyHeart} onClick={props.onClick}></img>
+        <img class="heart" src={EmptyHeart} onClick={props.onClick}></img>
       )}
     </div>
   );

@@ -17,6 +17,7 @@ import ImageCard from "./Components/Common/ImageCard";
 
 
 function App() {
+  const numLikes = 48;
 	return (
     <div>
       <NavBar />
@@ -28,7 +29,14 @@ function App() {
           <Route path="/profile" component={Profile} />
         </Switch>
       </BrowserRouter>
-      <ImageCard username="xchai"></ImageCard>
+      <ImageCard
+        username="xchai"
+        numLikes={numLikes}
+        caption="beach day, shot on Sony Alpha a7"
+      ></ImageCard>
+      <ImageCard username="jli" numLikes={numLikes}></ImageCard>
+      <ImageCard username="briansuti" numLikes={numLikes}></ImageCard>
+      <ImageCard username="neilxu" numLikes={numLikes}></ImageCard>
     </div>
   );
 }

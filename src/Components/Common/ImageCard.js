@@ -10,14 +10,20 @@ function ImageCard(props) {
   return (
     <div className="imageCard">
       <div className="userInfo">
-        <img src={UserIcon}></img>
-        <p>{props.username}</p>
+        <img className="profilePic" src={UserIcon}></img>
+        {props.username}
       </div>
       {/* placeholder for carousel */}
-      <img src={ThumbImage}></img>
+      <img className="postImage" src={ThumbImage}></img>
       {/* placeholder for caption information */}
-      <Heart isActive={heartActive} onClick={() => setHeartActive(!heartActive)}></Heart>
-      <div className="postInfo"></div>
+      <div className="likes">
+        <Heart isActive={heartActive} 
+          onClick={() => setHeartActive(!heartActive)}></Heart>
+        {props.numLikes} likes
+      </div>
+      <div className="postInfo">
+        {props.caption}
+      </div>
     </div>
   );
 }
