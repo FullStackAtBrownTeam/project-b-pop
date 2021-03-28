@@ -88,6 +88,9 @@ code {
   background-color: #FFE49D;
   overflow: hidden;
   position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -147,4 +150,33 @@ input{
   margin-right: 15px;
   background-color: white;
   border-color: white;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: 25px; /*gutter size offset */
+  margin-right: 25px;
+  /* width: auto; */
+  margin-top: 125px;
+}
+.my-masonry-grid_column {
+  /* padding-left: 30px; gutter size */
+  background-clip: padding-box;
+}
+ 
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background:white;
+  margin-bottom: 30px;
+
+}
+
+.masonryDiv {
+  width: 95%;
+  height: 420px;
+  border-radius: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
 }

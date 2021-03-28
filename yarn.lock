@@ -9450,6 +9450,11 @@
   "resolved" "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   "version" "3.0.4"
 
+"react-masonry-css@^1.0.14":
+  "integrity" "sha512-oAPVOCMApTT0HkxZJy84yU1EWaaQNZnJE0DjDMy/L+LxZoJEph4RRXsT9ppPKbFSo/tCzj+cCLwiBHjZmZ2eXA=="
+  "resolved" "https://registry.npmjs.org/react-masonry-css/-/react-masonry-css-1.0.14.tgz"
+  "version" "1.0.14"
+
 "react-minimal-side-navigation@^1.5.1":
   "integrity" "sha512-SJuvzXhkSRtIcHspCCan9oJOLGM7Kdcu6pGERR4i6Ufp8YWH/fLs3jCjdIohrDZWvKvE0HNC5giUmZBFOCeJTQ=="
   "resolved" "https://registry.npmjs.org/react-minimal-side-navigation/-/react-minimal-side-navigation-1.5.1.tgz"
@@ -9582,7 +9587,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@^17.0.1":
+"react@^16.0.0", "react@^17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.1.tgz"
   "version" "17.0.1"
