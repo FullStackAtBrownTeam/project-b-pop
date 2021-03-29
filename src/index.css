@@ -15,7 +15,6 @@ code {
 .logoIcon {
   height: 50px;
   padding-left: 50px;
-  
 }
 
 .rightDivButtons {
@@ -85,7 +84,7 @@ code {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #FFE49D;
+  background-color: #ffe49d;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -109,12 +108,12 @@ code {
   font-size: 17px;
 }
 
-.navLeft{
+.navLeft {
   display: flex;
   align-items: center;
 }
 
-.navRight{
+.navRight {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,11 +127,11 @@ code {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
-input{
+input {
   vertical-align: middle;
 }
 .searchBar {
@@ -156,8 +155,8 @@ input{
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
-  margin-left: 25px; /*gutter size offset */
-  margin-right: 25px;
+  margin-left: 100px !important; /*gutter size offset */
+  margin-right: 100px !important;
   /* width: auto; */
   margin-top: 125px;
 }
@@ -165,17 +164,17 @@ input{
   /* padding-left: 30px; gutter size */
   background-clip: padding-box;
 }
- 
-/* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  background:white;
-  margin-bottom: 30px;
 
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: white;
+  margin-bottom: 30px;
 }
 
 .masonryDiv {
   width: 95%;
-  height: 420px;
+  /* height: 420px; */
   border-radius: 15px;
   margin-right: 15px;
   margin-left: 15px;

@@ -11,6 +11,7 @@ import Masonry from "react-masonry-css";
 
 import BLogo from "./b.png";
 import ImageCard from "./Common/ImageCard";
+import VerticalImageCard from "./Common/VerticalCardTest";
 //import { PrivateRoute } from "../App";
 
 const MainFeed = (props) => {
@@ -22,6 +23,27 @@ const MainFeed = (props) => {
         columnClassName="my-masonry-grid_column"
       >
         <div className="masonryDiv">
+          <VerticalImageCard
+            username="xchai"
+            numLikes={3}
+            caption="beach day, shot on Sony Alpha a7"
+          ></VerticalImageCard>
+        </div>
+        <div className="masonryDiv">
+          <ImageCard
+            username="neil_x"
+            numLikes={3}
+            caption="beach day, shot on Sony Alpha a7"
+          ></ImageCard>
+        </div>
+        <div className="masonryDiv">
+          <ImageCard
+            username="Jess.ie"
+            numLikes={3}
+            caption="beach day, shot on Sony Alpha a7"
+          ></ImageCard>
+        </div>
+        <div className="masonryDiv">
           <ImageCard
             username="xchai"
             numLikes={3}
@@ -29,56 +51,34 @@ const MainFeed = (props) => {
           ></ImageCard>
         </div>
         <div className="masonryDiv">
-          <h1>Hello!</h1>
+          <ImageCard
+            username="BrianS"
+            numLikes={3}
+            caption="beach day, shot on Sony Alpha a7"
+          ></ImageCard>
         </div>
         <div className="masonryDiv">
-          <h1>Hello!</h1>
+          <VerticalImageCard
+            username="Jess.ie"
+            numLikes={3}
+            caption="beach day, shot on Sony Alpha a7"
+          ></VerticalImageCard>
         </div>
         <div className="masonryDiv">
-          <h1>Hello!</h1>
+          <ImageCard
+            username="N.Young"
+            numLikes={3}
+            caption="beach day, shot on Sony Alpha a7"
+          ></ImageCard>
         </div>
         <div className="masonryDiv">
-          <h1>Hello!</h1>
-        </div>
-        <div className="masonryDiv">
-          <h1>Hello!</h1>
-        </div>
-        <div className="masonryDiv">
-          <h1>Hello!</h1>
-        </div>
-        <div className="masonryDiv">
-          <h1>Hello!</h1>
+          <ImageCard
+            username="C_Paxx"
+            numLikes={3}
+            caption="beach day, shot on Sony Alpha a7"
+          ></ImageCard>
         </div>
       </Masonry>
-      {/* <div>
-        <div className="contentColumn">
-          <div className="featuredRow">
-            <h1>Featured Gallery</h1>
-          </div>
-          <div className="postsColumn">
-            <h3>Your Feed</h3>
-          </div>
-        </div>
-        <div className="menuColumn">
-          <table>
-            <thead>
-              <h3 className="menuHead">Easy Access</h3>
-            </thead>
-            <tr>
-              <td className="menuRow">Providence Pets</td>
-            </tr>
-            <tr>
-              <td className="menuRow">Brown Sports</td>
-            </tr>
-            <tr>
-              <td className="menuRow">Event Photos</td>
-            </tr>
-            <tr>
-              <td className="menuRow">Urban Structures</td>
-            </tr>
-          </table>
-        </div>
-      </div> */}
     </div>
   );
 };

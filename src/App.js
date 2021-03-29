@@ -13,7 +13,8 @@ import MyGroups from "./Components/MyGroups";
 import Favorites from "./Components/Favorites";
 import Profile from "./Components/Profile";
 import MainFeed from "./Components/MainFeed";
-import ImageCard from "./Components/Common/ImageCard";
+// import ImageCard from "./Components/Common/ImageCard";
+
 
 
 function App() {
@@ -29,14 +30,14 @@ function App() {
           <Route path="/profile" component={Profile} />
         </Switch>
       </BrowserRouter>
-      <ImageCard
+      {/* <ImageCard
         username="xchai"
         numLikes={numLikes}
         caption="beach day, shot on Sony Alpha a7"
       ></ImageCard>
       <ImageCard username="jli" numLikes={numLikes}></ImageCard>
       <ImageCard username="briansuti" numLikes={numLikes}></ImageCard>
-      <ImageCard username="neilxu" numLikes={numLikes}></ImageCard>
+      <ImageCard username="neilxu" numLikes={numLikes}></ImageCard> */}
     </div>
   );
 }
