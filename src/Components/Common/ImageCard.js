@@ -17,13 +17,13 @@ function ImageCard(props) {
       <img className="postImage" src={ThumbImage}></img>
       {/* placeholder for caption information */}
       <div className="likes">
-        <Heart isActive={heartActive} 
-          onClick={() => setHeartActive(!heartActive)}></Heart>
+        <Heart
+          isActive={heartActive}
+          onClick={() => setHeartActive(!heartActive)}
+        ></Heart>
         {props.numLikes} likes
       </div>
-      <div className="postInfo">
-        {props.caption}
-      </div>
+      <div className="postInfo">{props.caption}</div>
     </div>
   );
 }
