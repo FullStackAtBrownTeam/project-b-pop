@@ -12,9 +12,9 @@
   border-radius: 50%;
   max-width: 15%;
   margin-right: 5px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .postImage {
