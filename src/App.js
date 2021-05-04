@@ -1,27 +1,31 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "./Components/NavBar";
 import {
-	BrowserRouter,
-	Switch,
-	Route,
-	useHistory,
-	useRouteMatch,
+  BrowserRouter,
+  Switch,
+  Route,
+  useHistory,
+  useRouteMatch,
 } from "react-router-dom";
 import MyGroups from "./Components/MyGroups";
 import Favorites from "./Components/Favorites";
 import Profile from "./Components/Profile";
 import MainFeed from "./Components/MainFeed";
+// import Menu from "./Components/Menu/Menu";
+
 // import ImageCard from "./Components/Common/ImageCard";
 
-
-
 function App() {
+  // const [open, setOpen] = useState(false);
   const numLikes = 48;
-	return (
+  return (
     <div>
       <NavBar />
+      {/* <div>
+        <Menu open={open} setOpen={setOpen} />
+      </div> */}
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={MainFeed} />
