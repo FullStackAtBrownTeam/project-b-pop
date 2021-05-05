@@ -4,7 +4,14 @@ import { StyledMenu } from "./Menu.styled";
 const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
-      <a
+      <button
+        onClick={() => {
+          setOpen(false);
+        }}
+      >
+        &#10005;
+      </button>
+      {/* <a
         onClick={() => {
           setOpen(false);
         }}
@@ -12,26 +19,43 @@ const Menu = ({ open, setOpen }) => {
         <span role="img" aria-label="about us">
           &#10005;
         </span>
-      </a>
-
-      <a href="/">
-        <span role="img" aria-label="about us">
-          &#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;
-        </span>
-        Favorites
-      </a>
-      <a href="/">
-        <span role="img" aria-label="price">
-          &#x1f4b8;
-        </span>
-        My Groups
-      </a>
-      <a href="/">
-        <span role="img" aria-label="contact">
-          &#x1f4e9;
-        </span>
-        About BPOP
-      </a>
+      </a> */}
+      <h3>My Groups</h3>
+      <table>
+        <tr>
+          <td>&#x1F436;</td>
+          <td>
+            <a href="/">Providence Pets</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&#x1F3C8;</td>
+          <td>
+            <a href="/">Brown Sports</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&#x1F3C8;</td>
+          <td>
+            <a href="/">Event Photography</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&#x1F3C8;</td>
+          <td>
+            <a href="/">Urban Structures</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&#x1F3C8;</td>
+          <td>
+            <a href="/">Travel Photography</a>
+          </td>
+        </tr>
+      </table>
+      <a href="/">My Favorites</a>
+      <a href="/">Profile</a>
+      <a href="/">About BPOP</a>
     </StyledMenu>
   );
 };

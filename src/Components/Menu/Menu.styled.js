@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   //   justify-content: center;
-  background: red;
+  background: white;
   height: 100%;
   text-align: left;
   padding: 2rem;
@@ -15,17 +15,27 @@ export const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   z-index: 5;
-
+  box-shadow: ${({open}) => (open ? "0 0 0 10000px rgba(255, 255, 255, 0.5)" : "0 0")};
   //   @media (max-width: ${({ theme }) => theme.mobile}) {
   //     width: 100%;
   //   }
+  td {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  button {
+    background: none;
+    text-align: right;
+    border: 0px;
+  }
 
   a {
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding: 2rem 0;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
+    font-size: 18px;
+    // text-transform: uppercase;
+    padding: 10px;
+    // font-weight: bold;
+    // letter-spacing: 0.5rem;
     color: black;
     text-decoration: none;
     transition: color 0.3s linear;
@@ -36,7 +46,7 @@ export const StyledMenu = styled.nav`
     // }
 
     &:hover {
-      color: red;
+      color: gray;
     }
   }
 `;

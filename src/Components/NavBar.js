@@ -14,7 +14,11 @@ const NavBar = (props) => {
           <a href="/">
             <img className="logoIcon" src={BLogo} alt="Logo" href="/" />
           </a>
-          <input className="searchBar" type="text" placeholder="Search.." />
+          <input
+            className="searchBar"
+            type="text"
+            placeholder="&#x1F50D; Search.."
+          />
         </div>
         <div className="navRight">
           <button className="navButtons">Log in/Join</button>
