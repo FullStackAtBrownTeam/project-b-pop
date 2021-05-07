@@ -15,10 +15,16 @@ export const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   z-index: 5;
-  box-shadow: ${({open}) => (open ? "0 0 0 10000px rgba(255, 255, 255, 0.5)" : "0 0")};
+  box-shadow: ${({ open }) =>
+    open ? "0 0 0 10000px rgba(255, 255, 255, 0.5)" : "0 0"};
   //   @media (max-width: ${({ theme }) => theme.mobile}) {
   //     width: 100%;
   //   }
+  table {
+    height: 45vh;
+    overflow: auto;
+    display: inline-block;
+  }
   td {
     padding: 10px;
     margin: 10px;

@@ -20,7 +20,7 @@ const Menu = ({ open, setOpen }) => {
           &#10005;
         </span>
       </a> */}
-      <h3>My Groups</h3>
+      <h4>My Groups</h4>
       <table>
         <tr>
           <td>&#x1F436;</td>
@@ -50,6 +50,24 @@ const Menu = ({ open, setOpen }) => {
           <td>&#x1F3C8;</td>
           <td>
             <a href="/">Travel Photography</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&#x1F3C8;</td>
+          <td>
+            <a href="/">Fashion</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&#x1F3C8;</td>
+          <td>
+            <a href="/">Landscape Photography</a>
+          </td>
+        </tr>
+        <tr>
+          <td>&#x1F3C8;</td>
+          <td>
+            <a href="/">Fine Art Photography</a>
           </td>
         </tr>
       </table>
