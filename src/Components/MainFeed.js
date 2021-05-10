@@ -12,6 +12,15 @@ import Masonry from "react-masonry-css";
 import BLogo from "./b.png";
 import ImageCard from "./Common/ImageCard";
 import VerticalImageCard from "./Common/VerticalCardTest";
+import ThumbImage from "./../Assets/ImageCard/PlaceholderThumbnail.jpg";
+import Img2 from "../Assets/ImageCard/Tetonspring.jpeg";
+import Img3 from "../Assets/ImageCard/Pretty-Pictures-Fall.jpeg";
+import Img4 from "../Assets/ImageCard/brown-football.png";
+import Img5 from "../Assets/ImageCard/paris.jpeg";
+import Img6 from "../Assets/ImageCard/doodle.jpeg";
+import Img7 from "../Assets/ImageCard/Aquamarine.jpg";
+import Img8 from "../Assets/ImageCard/providence.jpeg";
+
 //import { PrivateRoute } from "../App";
 
 const MainFeed = (props) => {
@@ -23,16 +32,18 @@ const MainFeed = (props) => {
         columnClassName="my-masonry-grid_column"
       >
         <div className="masonryDiv">
-          <VerticalImageCard
+          <ImageCard
             username="xchai"
+            postImage={Img2}
             numLikes={3}
             caption="beach day, shot on Sony Alpha a7"
-          ></VerticalImageCard>
+          ></ImageCard>
         </div>
         <div className="masonryDiv">
           <ImageCard
             username="neil_x"
             numLikes={3}
+            postImage={ThumbImage}
             caption="beach day, shot on Sony Alpha a7"
           ></ImageCard>
         </div>
@@ -40,6 +51,7 @@ const MainFeed = (props) => {
           <ImageCard
             username="Jess.ie"
             numLikes={3}
+            postImage={Img3}
             caption="beach day, shot on Sony Alpha a7"
           ></ImageCard>
         </div>
@@ -47,6 +59,7 @@ const MainFeed = (props) => {
           <ImageCard
             username="xchai"
             numLikes={3}
+            postImage={Img4}
             caption="beach day, shot on Sony Alpha a7"
           ></ImageCard>
         </div>
@@ -54,20 +67,23 @@ const MainFeed = (props) => {
           <ImageCard
             username="BrianS"
             numLikes={3}
+            postImage={Img5}
             caption="beach day, shot on Sony Alpha a7"
           ></ImageCard>
         </div>
         <div className="masonryDiv">
-          <VerticalImageCard
+          <ImageCard
             username="Jess.ie"
             numLikes={3}
+            postImage={Img6}
             caption="beach day, shot on Sony Alpha a7"
-          ></VerticalImageCard>
+          ></ImageCard>
         </div>
         <div className="masonryDiv">
           <ImageCard
             username="N.Young"
             numLikes={3}
+            postImage={Img7}
             caption="beach day, shot on Sony Alpha a7"
           ></ImageCard>
         </div>
@@ -75,6 +91,7 @@ const MainFeed = (props) => {
           <ImageCard
             username="C_Paxx"
             numLikes={3}
+            postImage={Img8}
             caption="beach day, shot on Sony Alpha a7"
           ></ImageCard>
         </div>

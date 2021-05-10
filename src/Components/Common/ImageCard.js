@@ -14,7 +14,7 @@ function ImageCard(props) {
         {props.username}
       </div>
       {/* placeholder for carousel */}
-      <img className="postImage" src={ThumbImage}></img>
+      <img className="postImage" src={props.postImage}></img>
       {/* placeholder for caption information */}
       <div className="likes">
         <Heart
