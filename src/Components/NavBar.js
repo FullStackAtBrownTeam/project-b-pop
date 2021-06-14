@@ -3,10 +3,12 @@ import BLogo from "./bpop_full.png";
 import "./hamburger.css";
 import Burger from "./Burger/Burger.js";
 import Menu from "./Menu/Menu.js";
+import LoginForm from "./LoginForm/LoginForm";
 
 const NavBar = (props) => {
   const [toggleHamburger, setToggleHamburger] = useState(true);
   const [open, setOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
   return (
     <div>
       <div class="topnav">
@@ -21,7 +23,12 @@ const NavBar = (props) => {
           />
         </div>
         <div className="navRight">
-          <button className="navButtons">Log in/Join</button>
+          <button
+            className="navButtons"
+            onClick={() => setLoginOpen(!loginOpen)}
+          >
+            Log in/Join
+          </button>
           <button className="navButtons">Post</button>
           {/* <button
             onClick={() => setToggleHamburger(!toggleHamburger)}
@@ -41,6 +48,9 @@ const NavBar = (props) => {
         </div>
       </div>
       <Menu open={open} setOpen={setOpen} />
+      {loginOpen && (
+        <LoginForm loginOpen={loginOpen} setLoginOpen={setLoginOpen} />
+      )}
     </div>
   );
 };

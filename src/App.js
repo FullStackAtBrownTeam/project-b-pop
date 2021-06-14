@@ -18,7 +18,6 @@ import MainFeed from "./Components/MainFeed";
 // import ImageCard from "./Components/Common/ImageCard";
 
 function App() {
-  // const [open, setOpen] = useState(false);
   const numLikes = 48;
   return (
     <div>
@@ -26,6 +25,7 @@ function App() {
       {/* <div>
         <Menu open={open} setOpen={setOpen} />
       </div> */}
+
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={MainFeed} />

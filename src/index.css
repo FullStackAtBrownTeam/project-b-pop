@@ -191,3 +191,23 @@ input {
   margin-right: 15px;
   margin-left: 15px;
 }
+
+.loginButton {
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+  width: 120px;
+  margin-right: 15px;
+  background-color: rgb(128, 206, 241);
+  border-color: white;
+}
+
+.signUpButton {
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+  width: 120px;
+  margin-right: 15px;
+  background-color: rgb(105, 228, 167);
+  border-color: white;
+}
