@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import BLogo from "./bpop_full.png";
 import "./hamburger.css";
 import Burger from "./Burger/Burger.js";
@@ -9,6 +10,11 @@ const NavBar = (props) => {
   const [toggleHamburger, setToggleHamburger] = useState(true);
   const [open, setOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
+  let history = useHistory();
+  // const navigate = useNavigate();
+  const routeChange = () => {
+    history.push("/favorites");
+  };
   return (
     <div>
       <div class="topnav">
@@ -29,7 +35,9 @@ const NavBar = (props) => {
           >
             Log in/Join
           </button>
-          <button className="navButtons">Post</button>
+          <button className="navButtons" onClick={routeChange}>
+            Post
+          </button>
           {/* <button
             onClick={() => setToggleHamburger(!toggleHamburger)}
             class={

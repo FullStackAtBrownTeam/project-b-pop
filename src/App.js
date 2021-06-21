@@ -25,11 +25,11 @@ function App() {
   const numLikes = 48;
   return (
     <div>
-      <NavBar />
       {/* <div>
         <Menu open={open} setOpen={setOpen} />
       </div> */}
       <BrowserRouter>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={MainFeed} />
           <Route path="/groups" exact component={MyGroups} />
