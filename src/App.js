@@ -13,11 +13,15 @@ import MyGroups from "./Components/MyGroups";
 import Favorites from "./Components/Favorites";
 import Profile from "./Components/Profile";
 import MainFeed from "./Components/MainFeed";
+import Login from "./Components/Login";
+import Signup from "./Components/Signup";
+
 // import Menu from "./Components/Menu/Menu";
 
 // import ImageCard from "./Components/Common/ImageCard";
 
 function App() {
+  // const [open, setOpen] = useState(false);
   const numLikes = 48;
   return (
     <div>
@@ -25,13 +29,14 @@ function App() {
       {/* <div>
         <Menu open={open} setOpen={setOpen} />
       </div> */}
-
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={MainFeed} />
           <Route path="/groups" exact component={MyGroups} />
           <Route path="/favorites" component={Favorites} />
           <Route path="/profile" component={Profile} />
+          <Route path="/login" component={Login} />
+          <Route path="/signup" component={Signup} />
         </Switch>
       </BrowserRouter>
       {/* <ImageCard

@@ -7,3 +7,16 @@ body,html {
 
   background-color: #FFE49D !important;
 }
+
+.SignPage form {
+  margin: auto;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.SignPage {
+  padding: 120px 0 0 0; /*temporary fix for header*/
+
+  background-color: white;
+
+}
